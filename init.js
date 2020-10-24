@@ -3,6 +3,9 @@ import "./db";
 import dotenv from "dotenv";
 dotenv.config();
 
+import "./models/Comment";
+import "./models/Video";
+
 const port = process.env.PORT || 4000;
 
 app.listen(port, () => {

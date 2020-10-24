@@ -1,10 +1,11 @@
 extends ./layouts/main
 
 block content
-    form.form__container(action=routes.join, method="post")
-        input(type="title", placeholder="Full Name", name="name", requried=true)
-        input(type="email", placeholder="Email", name="email", requried=true)
-        input(type="password", placeholder="Password", name="password", requried=true)
-        input(type="password", placeholder="Verify Password", name="password2", requried=true)
-        input(type="submit", value="Join Now")
-    include ./partials/socialLogin
+    .form-container
+        form(action=routes.join, method="post")
+            input(type="title", placeholder="Full Name", name="name", requried=true)
+            input(type="email", placeholder="Email", name="email", requried=true)
+            input(type="password", placeholder="Password", name="password", requried=true)
+            input(type="password", placeholder="Verify Password", name="password2", requried=true)
+            input(type="submit", value="Join Now")
+        include ./partials/socialLogin
