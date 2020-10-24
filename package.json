@@ -1,0 +1,50 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "cloning wetube practice 2",
+  "main": "init.js",
+  "author": "ilseong",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "autoprefixer": "^10.0.1",
+    "babel-loader": "^8.1.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "mongoose": "^5.10.9",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^4.0.4",
+    "pug": "^3.0.0",
+    "sass-loader": "^10.0.3",
+    "save-dev": "0.0.1-security",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.1.0"
+  },
+  "browserslist": [
+    "cover 99.5%"
+  ],
+  "scripts": {
+    "dev:server": "nodemon --exec babel-node init.js --delay 2 --ignore 'scss'",
+    "dev:assets": "cross-env WEBPACK_ENV=development webpack -w",
+    "build:assets": "cross-env WEBPACK_ENV=production webpack"
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "mini-css-extract-plugin": "^1.1.1",
+    "nodemon": "^2.0.6"
+  }
+}
