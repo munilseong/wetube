@@ -10,6 +10,7 @@ const USERS = "/users";
 const USER_DETAIL = "/:id";
 const CHANGE_PASSWORD = "/change-password";
 const EDIT_PROFILE = "/edit-profile";
+const ME = "/me";
 
 //video
 const VIDEOS = "/videos";
@@ -17,6 +18,10 @@ const UPLOAD = "/upload";
 const VIDEO_DETAIL = "/:id";
 const EDIT_VIDEO = "/:id/edit";
 const DELETE_VIDEO = "/:id/delete";
+
+//github
+const GH = "/auth/github";
+const GH_CALLBACK = "/auth/github/callback";
 
 const routes = {
   home: HOME,
@@ -48,6 +53,9 @@ const routes = {
     if (id) return `/videos/${id}/delete`;
     else return DELETE_VIDEO;
   },
+  me: ME,
+  github: GH,
+  githubCallback: GH_CALLBACK,
 };
 
 export default routes;
